@@ -17,12 +17,15 @@
 
 ## How To Run
 
+Follow below intructions to run the app:
+
 ```
-  1. run: npm install
-  2. run: npm install gulp -g
-  3. run: gulp setup-db //this will start mongo as well as build schema in test db
-  4. run: gulp bundle //bundle app.js, to provide iso-morphic support
-  4. run: node app.js
+  1. npm install
+  2. npm install gulp -g
+  3. gulp setup-db   //this will start mongo as well as build schema in test db
+  4. gulp bundle     //bundle app.js, to provide iso-morphic support
+  5. node app.js
+  6. visit: http://localhost:8080/
 ```
 
 ## License
