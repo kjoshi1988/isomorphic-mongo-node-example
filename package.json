@@ -1,0 +1,43 @@
+{
+  "name": "entity-domain",
+  "version": "1.0.0",
+  "description": "An Entity Domain test module.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kapil Joshi <kjoshi1988@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.9.0",
+    "generic-pool": "^2.4.2",
+    "log4js": "^0.6.37",
+    "mkdirs": "0.0.2",
+    "mongodb": "^2.2.2",
+    "path-to-regexp": "^1.5.3",
+    "properties": "^1.2.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-router": "^2.5.2",
+    "superagent": "^2.1.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-mongodb-data": "^2.0.0",
+    "reactify": "^1.1.1",
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "path": {
+    "mongoDB": "mongodb://127.0.0.1:27017/erm",
+    "app": "./views/client.js"
+  },
+  "dest": {
+    "app": "app.js",
+    "dist": "public/scripts/react"
+  }
+}
