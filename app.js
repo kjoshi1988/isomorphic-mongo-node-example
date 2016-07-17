@@ -49,7 +49,7 @@ const app = bootStrap();
  */
 staticResourceHandler.init(app);
 /**
- * Adding handler for requests trying to fetch data as json
+ * Adding REST handler for requests. Returns data as json.
  * for eg:
  * <pre>
  *      1./api/users/all : returns all employees.
