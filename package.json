@@ -33,7 +33,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "path": {
-    "mongoDB": "mongodb://127.0.0.1:27017/erm",
+    "mongoDB": "mongodb://127.0.0.1:27017/test",
     "app": "./views/client.js"
   },
   "dest": {
