@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "578a2bf63667c9233c353fc9",
+    "name": "John Kevin",
+    "designation": "Associate",
+    "date_of_joining": "2014-07-16",
+    "managers": [
+      "578a2bf63667c9233c353fca"
+    ]
+  },
+  {
+    "_id": "578a2bf63667c9233c353fca",
+    "name": "Rahul Sharma",
+    "designation": "Manager",
+    "date_of_joining": "2010-08-01",
+    "managers": []
+  },
+  {
+    "_id": "578a2bf63667c9233c353fcb",
+    "name": "Sneha Singh",
+    "designation": "Team Lead",
+    "date_of_joining": "2012-02-02",
+    "managers": [
+      "578a2bf63667c9233c353fcc",
+      "578a2bf63667c9233c353fca"
+    ]
+  },
+  {
+    "_id": "578a2bf63667c9233c353fcc",
+    "name": "Shawn Paul",
+    "designation": "Manager",
+    "date_of_joining": "2010-08-01",
+    "managers": []
+  },
+  {
+    "_id": "578a2bf63667c9233c353fcd",
+    "name": "Anne Karengan",
+    "designation": "Senior Associate",
+    "date_of_joining": "2010-12-01",
+    "managers": [
+      "578a2bf63667c9233c353fca"
+    ]
+  }
+]

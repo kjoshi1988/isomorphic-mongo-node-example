@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "578a2bf63667c9233c353fce",
+    "name": "Analytics",
+    "start_date": "2016-05-16",
+    "close_date": "",
+    "details": "Do Big Data analytics, High performance analysis",
+    "manager": "578a2bf63667c9233c353fca"
+  },
+  {
+    "_id": "578a2bf63667c9233c353fcf",
+    "name": "Car Pool",
+    "start_date": "2012-05-16",
+    "close_date": "",
+    "details": "An App which not only help in car pooling but also you get to meet new and interesting people.",
+    "manager": "578a2bf63667c9233c353fca"
+  },
+  {
+    "_id": "578a2bf63667c9233c353fd0",
+    "name": "Zyber",
+    "start_date": "2016-05-16",
+    "close_date": "",
+    "details": "Zyber: do social networking via video!!",
+    "manager": "578a2bf63667c9233c353fcc"
+  },
+  {
+    "_id": "578a2bf63667c9233c353fd1",
+    "name": "PaidToView",
+    "start_date": "2016-05-16",
+    "close_date": "",
+    "details": "Get paid to view commercials!!",
+    "manager": "578a2bf63667c9233c353fcc"
+  }
+]

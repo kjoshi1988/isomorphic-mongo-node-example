@@ -2,7 +2,6 @@
 
 const gulp = require("gulp");
 const fs = require("fs");
-const mongodbData = require('gulp-mongodb-data');
 const mkdirs = require('mkdirs');
 const exec = require('child_process').exec;
 const logger = require("log4js").getLogger("gulpfile");
@@ -31,6 +30,7 @@ function runCommand(command) {
 
 gulp.task('start-mongo', function (cb) {
     mkdirs("logs");
+    mkdirs("data");
     return runCommand('mongod --fork --dbpath ./data/ --logpath logs/mongo.log')(cb);
 });
 gulp.task('stop-mongo', runCommand('mongo admin --eval "db.shutdownServer();"'));
@@ -70,14 +70,16 @@ gulp.task('setup-db', function (cb) {
 });
 gulp.task("build-metadata", ["build-emp-metadata", "build-project-metadata"]);
 gulp.task("build-emp-metadata", function () {
-    return gulp.src('./data/metadata/employee.json')
+    const mongodbData = require('gulp-mongodb-data');
+    return gulp.src('./schema/employee.json')
         .pipe(mongodbData({
             mongoUrl: mongoDbUrl,
             collectionName: 'employees'
         }));
 });
 gulp.task("build-project-metadata", function () {
-    return gulp.src('./data/metadata/project.json')
+    const mongodbData = require('gulp-mongodb-data');
+    return gulp.src('./schema/project.json')
         .pipe(mongodbData({
             mongoUrl: mongoDbUrl,
             collectionName: 'projects'

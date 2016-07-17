@@ -201,3 +201,12 @@ a.logo {
     font-size: 12px;
     line-height: 20px;
 }
+
+#projectDetails {
+    line-height: 22px;
+    padding: 11px 0;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 12px;
+}
