@@ -9,6 +9,16 @@ const logger = require("log4js").getLogger("request.ReactFilter");
 const cssPath = "/css/style.css";
 const jsPath = "/scripts/react/app.js";
 
+/**
+ * React view middleware, used for Iso-Morphic support.
+ *
+ * Uses React Router, for routing requests.
+ * Routes are defined in routeController.jsx.
+ *
+ * If no route is matched, renderProps is null, it then passes control to next middleware.
+ *
+ * @type {{initReactFilter: module.exports.initReactFilter}}
+ */
 module.exports = {
     initReactFilter: function (app) {
         app.filter("/*", function (req, res, next) {

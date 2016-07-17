@@ -27567,9 +27567,12 @@ const Layout = require('./components/layout.jsx');
 const EmpList = require('./components/employee/employeeList.jsx');
 const ProjectList = require('./components/project/projectList.jsx');
 const Project = require('./components/project/project.jsx');
-//const Employee = require('./components/employee/employee.jsx');
-//const Index = require('./components/index.jsx');
 
+/**
+ * Routes for handling views.
+ *
+ * @type {XML}
+ */
 const routes = (
     React.createElement(Route, {name: "home", path: "/", component: Layout}, 
         React.createElement(Route, {name: "employeeList", path: "/employees", component: EmpList}), 
